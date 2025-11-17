@@ -5,9 +5,8 @@
 @media screen and (min-width:768px) {
 
     main {
-        background-color: #f6f5f3;
         padding: 40px;
-        min-height: calc(100vh - 70px);
+
     }
 
     #topbar {
@@ -41,15 +40,56 @@
         display: inline-block;
     }
 
-    .clearfix img{
+    .clearfix img {
         float: left;
         margin-right: 10px;
     }
 
     .clerafix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
+        content: "";
+        display: table;
+        clear: both;
+    }
 
 }
+
+/* versione desktop*/
+
+@media screen and (min-width:992px) {
+
+    main {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .quick-notes ul {
+        display: inline;
+    }
+
+    .recipe-card {
+        display: flex;
+    }
+
+
+    .recipe-video {
+        width: 60%;
+        height: 320px;
+    }
+
+    .recipe-info {
+        width: 40%;
+    }
+
+    .social-networks .label {
+        display: inline;
+    }
+
+    footer {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+
