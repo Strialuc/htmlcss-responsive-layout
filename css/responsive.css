@@ -4,8 +4,52 @@
 
 @media screen and (min-width:768px) {
 
-#topbar {
-    display:block;
+    main {
+        background-color: #f6f5f3;
+        padding: 40px;
+        min-height: calc(100vh - 70px);
+    }
+
+    #topbar {
+        display: block;
+    }
+
+    .recipe-name {
+        color: #4e3969;
+        font-size: 35px;
+    }
+
+    .recipe-origin {
+        display: inline;
+    }
+
+    .quick-notes ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .quick-notes ul li {
+        flex-basis: calc(100% / 3 - (40px / 3));
+    }
+
+    .social-networks button {
+        flex-grow: 1;
+    }
+
+    .ads {
+        display: inline-block;
+    }
+
+    .clearfix img{
+        float: left;
+        margin-right: 10px;
+    }
+
+    .clerafix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
-    
+
 }
